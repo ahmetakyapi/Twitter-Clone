@@ -21,3 +21,14 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.next
+.idea
+node_modules
+public/ui
+public/sw*
+public/workbox*
+.DS_Store
+out/
+.env
+.env.local
+src/logo.svg
