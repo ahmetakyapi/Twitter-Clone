@@ -1,7 +1,8 @@
-## React ile Twitter Clone Uygulaması
+### React ile Twitter Clone Uygulaması
 
-### Kullanılan Teknolojiler
-#### React 
-#### TailwindCss
-#### Firebase
+Kullanılan Teknolojiler
+
+1. React
+2. TailwindCss
+3. Firebase
 
