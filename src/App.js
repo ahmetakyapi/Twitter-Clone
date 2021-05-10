@@ -1,11 +1,16 @@
 import React from "react";
+import Container from "./Layout/Container";
+import Sidebar from "./Layout/Sidebar";
+import Content from "./Layout/Content";
+import Widgets from "./Layout/Widgets";
 
 const App = () => {
    return (
-       <div>
-        <h1 className="bg-primary-base">Selam</h1>
-       </div>
+       <Container>
+        <Sidebar/>
+        <Content/>
+        <Widgets/>
+       </Container>
    )
 }
-
 export default App
