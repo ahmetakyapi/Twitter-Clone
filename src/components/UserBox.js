@@ -8,11 +8,11 @@ const UserBox = () => {
                 className="aspect-w-14 aspect h-14 rounded-full"
                 />
                    <div className="flex flex-col">
-                     <span className="text-md font-medium text-black">
+                     <span className="text-md font-medium text-black" >
                          Ahmet Akyapı
                      </span>
                         <span
-                            className="font-light text-gray-700">
+                            className="font-light text-gray-700 space-x-10">
                             @Ahmetakyapi
                         </span>
                     </div>
