@@ -54,7 +54,7 @@ const Sidebar = () => {
         setActive(name)
     }
     return (
-        <div className="flex flex-col justify-between bg-white w-72 px-2 max-w-4xl mx-auto px-6">
+        <div className="h-screen sticky top-0 flex flex-col justify-between bg-white w-72 px-2 max-w-4xl mx-auto px-6">
             <div>
                 <div className="mt-2 mb-5 ml-1 flex items-center justify-center w-12 h-12 rounded-full hover:bg-gray-lightest">
                     <img src={twitterLogo} alt="Twitter Logo" className="w-10 h-10"/>
