@@ -1,7 +1,18 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {PopulerIcon} from "../icons/icons";
+import TweetBox from "../components/TweetBox";
+import Divider from "../components/Divider";
+import FeedList from "../components/FeedList";
+import db from "../firebase";
 
 const Content = () => {
+    const [tweets, setTweets] = useState([]);
+    useEffect(() => {
+             db.collection('feed')
+            .orderBy('timestamp', 'desc')
+            .onSnapshot(snapshot => setTweets(snapshot.docs.map(doc => doc.data())))
+    }, [])
+    console.log(tweets);
         return (
             <main className="bg-white flex-1 flex flex-col border-r border-l border-gray-extraLight max-w-4xl mx-auto px-6">
               <header className="sticky top-0 z-10 flex justify-between items-center p-4 border-b border-gray-extraLight bg-white">
@@ -14,15 +25,15 @@ const Content = () => {
                          alt="avatar"
                          className="aspect-w-14 aspect h-14 rounded-full"
                     />
-                    <div>
-                        {/* TweetBox */}
-                        <h1>Tweetbox</h1>
-                    </div>
+                    <TweetBox/>
                 </div>
+                <Divider/>
+
+                <FeedList tweets= {tweets} />
+
             </main>
         )
     }
-
 
 
 export default Content

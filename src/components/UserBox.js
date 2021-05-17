@@ -4,7 +4,7 @@ const UserBox = () => {
         return (
             <div className="flex justify-between items-center mb-6 hover:bg-primary-light cursor-pointer rounded-full py-2 px-4 transform transition-colors duration-250">
                 <img src="https://pbs.twimg.com/profile_images/889064146121236480/fXWgGFPL_400x400.jpg"
-                     alt="avatar"
+                     alt="Profile"
                 className="aspect-w-14 aspect h-14 rounded-full"
                 />
                    <div className="flex flex-col">
