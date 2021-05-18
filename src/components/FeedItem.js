@@ -14,9 +14,9 @@ const FeedItem = ({avatar, content, displayName, image, image2, timestamp, usern
             {timestamp?.toDate().toLocaleTimeString("tr-TR")}
           </span>
                 </div>
+
                 <p className="mt-2 text-gray-900 text-sm">{content}</p>
                 {image && <img src={image} className="my-2 rounded-xl max-h-96" alt=""/>}
-                {image2 && <img src="https://i.gifer.com/FXi0.gif" className="my-2 rounded-xl max-h-96" alt="" />}
                 <ul className="-ml-1 mt-3 flex justify-between max-w-md">
                     <li className="flex items-center  space-x-3 text-gray-dark text-sm group">
                         <div className="flex items-center justify-center w-8 h-8 rounded-full group-hover:bg-primary-light ">
