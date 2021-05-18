@@ -14,8 +14,7 @@ const TweetBox = () => {
               username: "@Ahmetakyapi",
               content,
               timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-              image: "https://upload.wikimedia.org/wikipedia/tr/8/85/200px-Fenerbah%C3%A7e.png",
-              image2:"https://pazarlamasyon.com/wp-content/uploads/2016/03/cheering_minions.gif",
+              image: "",
               avatar:"https://pbs.twimg.com/profile_images/889064146121236480/fXWgGFPL_400x400.jpg"
           })
           setContent("");
